@@ -1,0 +1,3 @@
+#!/bin/bash
+
+./pants run lab.py

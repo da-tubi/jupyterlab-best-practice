@@ -2,7 +2,8 @@
 python_requirement(
     name="requirements",
     requirements=[
-        "pandas==1.2.4",
+        "jupyterlab",
+        "setuptools"
     ],
 )
 
