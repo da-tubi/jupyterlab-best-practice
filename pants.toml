@@ -15,3 +15,7 @@ root_patterns = ["/"]
 interpreter_constraints = ["==3.8.14"]
 enable_resolves = true
 
+[python.resolves]
+  pandas = "3rdparty/python/pandas.lock"
+  duckdb = "3rdparty/python/duckdb.lock"
+  python-default = "3rdparty/python/default.lock"

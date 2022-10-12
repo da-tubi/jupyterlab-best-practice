@@ -5,8 +5,27 @@ python_requirement(
         "jupyterlab",
         "setuptools"
     ],
+    resolve=parametrize("python-default", "pandas", "duckdb")
 )
 
 # See https://www.pantsbuild.org/docs/reference-python_sources for more info
 python_sources(name = "sources", sources=["**/*.py"])
 
+# For Pandas
+python_requirement(
+    name="pandas",
+    requirements=[
+        "pandas"
+    ],
+    resolve="pandas"
+)
+
+
+# For DuckDB
+python_requirement(
+    name="duckdb",
+    requirements=[
+        "duckdb"
+    ],
+    resolve="duckdb"
+)
