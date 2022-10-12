@@ -32,7 +32,7 @@ Take `duckdb_sources` for example.
 
 For more info, see https://www.pantsbuild.org/docs/python-third-party-dependencies#how-dependencies-are-chosen
 
-```
+``` python
 # For DuckDB
 python_requirement(
     name="duckdb_requirement",
