@@ -15,32 +15,13 @@ python_sources(
     resolve="python-default",
 )
 
-# For Pandas
-python_requirement(
-    name="pandas_requirement",
-    requirements=[
-        "pandas"
-    ],
-    resolve="pandas_req"
-)
-
 python_sources(
     name = "pandas_sources",
     sources=["**/*.py"],
     resolve="pandas_req",
     dependencies=[
-        "//:pandas_requirement#pandas",
+        "//notebooks/pandas_req:requirements#pandas",
     ],
-)
-
-
-# For DuckDB
-python_requirement(
-    name="duckdb_requirement",
-    requirements=[
-        "duckdb"
-    ],
-    resolve="duckdb_req"
 )
 
 python_sources(
@@ -48,6 +29,6 @@ python_sources(
     sources=["**/*.py"],
     resolve="duckdb_req",
     dependencies=[
-        "//:duckdb_requirement#duckdb",
+        "//notebooks/duckdb_req:requirements#duckdb",
     ],
 )

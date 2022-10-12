@@ -1,0 +1,7 @@
+python_requirement(
+    name="requirements",
+    requirements=[
+        "duckdb"
+    ],
+    resolve="duckdb_req"
+)

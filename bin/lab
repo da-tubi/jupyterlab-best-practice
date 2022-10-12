@@ -3,8 +3,8 @@
 set -x
 
 if [ -z "$1" ];then
-  ./pants run //lab.py:default_sources
+  ./pants run //notebooks/lab.py:default_sources
 else
-  ./pants run //lab.py:$1_sources
+  ./pants run //notebooks/lab.py:$1_sources
 fi
 
