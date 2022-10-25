@@ -4,50 +4,26 @@
 # Default Resolve
 bin/lab
 
-# Dependencies specified in duckdb_sources
 bin/lab duckdb
-
-# Dependencies specified in pandas_sources
 bin/lab pandas
 ```
-## Notebooks
-+ Notebooks under `notebooks` only depends on JupyterLab
-+ Notebooks under `notebooks/duckdb` depends on resolve `duckdb`
-
-A resolve is a set of Python dependencies in Pants for Python projects.
-
-```
-notebooks
-├── InstalledPackages.ipynb
-├── duckdb
-│   └── DuckDBVersion.ipynb
-└── pandas
-    └── PandasVersion.ipynb
-```
-
-## How to set dependecies for notebooks
-Take `duckdb_sources` for example.
-
-`duckdb_sources` will choose a subset of dependencies (runtime) in the resolve `duckdb_sources` as specified in the `dependencies` parameter.
-
-For more info, see https://www.pantsbuild.org/docs/python-third-party-dependencies#how-dependencies-are-chosen
-
+## How to define a Jupyter Lab
+### Take `duckdb` for example
 ``` python
-# For DuckDB
-python_requirement(
-    name="duckdb_requirement",
-    requirements=[
-        "duckdb"
-    ],
-    resolve="duckdb_req"
-)
-
-python_sources(
-    name = "duckdb_sources",
-    sources=["**/*.py"],
-    resolve="duckdb_req",
-    dependencies=[
-        "//:duckdb_requirement#duckdb",
-    ],
-)
+jupyter_lab(name="duckdb", requirements=["duckdb==0.5.1"])
 ```
+
++ [notebooks/duckdb](notebooks/duckdb) is where we store the notebooks
++ resolve `duckdb` is defined as `duckdb = "3rdparty/python/duckdb.lock"` in [pants.toml](pants.toml)
++ run `./pants generate-lockfiles --resolve=duckdb` to generate the lockfiles for dependencies
+
+### Name and Requirements
+Name is used to:
++ Locate where we store the notebooks: `notebooks/{name}`
++ Set dependencies as the resolve `name`
+
+The Jupyter Lab `default` is special, we kept all notebooks for `default` under `notebooks`.
+
+Requirements are equiv to `requirements.txt` but we maintain it in a list here.
+
+Everytime, we change the requirements, do not forget to run `./pants generate-lockfiles --resolve={name}`.
