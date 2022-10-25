@@ -5,7 +5,7 @@
 bin/lab
 
 bin/lab duckdb
-bin/lab pandas
+bin/lab data
 ```
 ## How to define a Jupyter Lab
 ### Take `duckdb` for example
