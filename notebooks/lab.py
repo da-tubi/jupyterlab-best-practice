@@ -1,2 +1,4 @@
+from sys import argv
 from jupyterlab.labapp import main
-main()
+
+main(argv[1:])

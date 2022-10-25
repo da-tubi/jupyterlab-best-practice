@@ -1,3 +1,6 @@
+[anonymous-telemetry]
+enabled = false
+
 [GLOBAL]
 pants_version = "2.13.0"
 
@@ -7,15 +10,19 @@ use_deprecated_directory_cli_args_semantics = false
 backend_packages.add = [
   "pants.backend.python",
 ]
+build_file_prelude_globs = ["pants-plugins/macros.py"]
+
 
 [source]
 root_patterns = ["/"]
+
 
 [python]
 interpreter_constraints = ["==3.8.14"]
 enable_resolves = true
 
+
 [python.resolves]
-  pandas_req = "3rdparty/python/pandas.lock"
-  duckdb_req = "3rdparty/python/duckdb.lock"
-  python-default = "3rdparty/python/default.lock"
+  pandas = "3rdparty/python/pandas.lock"
+  duckdb = "3rdparty/python/duckdb.lock"
+  default = "3rdparty/python/default.lock"

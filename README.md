@@ -12,16 +12,16 @@ bin/lab pandas
 ```
 ## Notebooks
 + Notebooks under `notebooks` only depends on JupyterLab
-+ Notebooks under `notebooks/duckdb_req` depends on resolve `duckdb_req`
++ Notebooks under `notebooks/duckdb` depends on resolve `duckdb`
 
 A resolve is a set of Python dependencies in Pants for Python projects.
 
 ```
 notebooks
 ├── InstalledPackages.ipynb
-├── duckdb_req
+├── duckdb
 │   └── DuckDBVersion.ipynb
-└── pandas_req
+└── pandas
     └── PandasVersion.ipynb
 ```
 

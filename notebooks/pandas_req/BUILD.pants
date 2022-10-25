@@ -1,7 +1,0 @@
-python_requirement(
-    name="requirements",
-    requirements=[
-        "pandas"
-    ],
-    resolve="pandas_req"
-)

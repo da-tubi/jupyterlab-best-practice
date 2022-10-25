@@ -3,8 +3,8 @@
 set -x
 
 if [ -z "$1" ];then
-  ./pants run //notebooks/lab.py:default_sources
+  ./pants run //notebooks/lab.py:default_main -- --notebook-dir notebooks
 else
-  ./pants run //notebooks/lab.py:$1_sources
+  ./pants run //notebooks/lab.py:$1_main -- --notebook-dir notebooks/$1
 fi
 

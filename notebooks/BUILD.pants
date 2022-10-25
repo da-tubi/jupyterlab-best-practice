@@ -1,34 +1,3 @@
-# See https://www.pantsbuild.org/docs/python-third-party-dependencies for more info
-python_requirement(
-    name="requirements",
-    requirements=[
-        "jupyterlab",
-        "setuptools"
-    ],
-    resolve=parametrize("python-default", "pandas_req", "duckdb_req")
-)
-
-# See https://www.pantsbuild.org/docs/reference-python_sources for more info
-python_sources(
-    name = "default_sources",
-    sources=["**/*.py"],
-    resolve="python-default",
-)
-
-python_sources(
-    name = "pandas_sources",
-    sources=["**/*.py"],
-    resolve="pandas_req",
-    dependencies=[
-        "//notebooks/pandas_req:requirements#pandas",
-    ],
-)
-
-python_sources(
-    name = "duckdb_sources",
-    sources=["**/*.py"],
-    resolve="duckdb_req",
-    dependencies=[
-        "//notebooks/duckdb_req:requirements#duckdb",
-    ],
-)
+jupyter_lab(name="default")
+jupyter_lab(name="pandas", requirements=["pandas==1.5.1"])
+jupyter_lab(name="duckdb", requirements=["duckdb==0.5.1"])
