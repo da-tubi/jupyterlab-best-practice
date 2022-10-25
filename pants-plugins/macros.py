@@ -23,5 +23,5 @@ def jupyter_lab(**kwargs):
         name = f"{name}_main",
         source="lab.py",
         resolve=name,
-        dependencies=runtime_deps
+        dependencies=runtime_deps,
     )

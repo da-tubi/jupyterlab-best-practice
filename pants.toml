@@ -23,6 +23,6 @@ enable_resolves = true
 
 
 [python.resolves]
-  pandas = "3rdparty/python/pandas.lock"
+  data = "3rdparty/python/data.lock"
   duckdb = "3rdparty/python/duckdb.lock"
   default = "3rdparty/python/default.lock"
