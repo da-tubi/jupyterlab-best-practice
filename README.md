@@ -8,6 +8,11 @@ bin/lab duckdb
 bin/lab data
 ```
 ## How to define a Jupyter Lab
+### Three Highlights
++ **Free** yourself of **Python virtual environment**
++ **Reproducible** because of  the dependencies lock mechanism
++ As **Easy** as `bin/lab xyz` to launch a JupyterLab
+
 ### Take `duckdb` for example
 ``` python
 jupyter_lab(name="duckdb", requirements=["duckdb==0.5.1"])
