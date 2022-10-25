@@ -1,4 +1,4 @@
-# JupyterLab Notebooks using Pants
+# Launching Jupyter Labs in an easy way
 ## Usage
 ``` shell
 # Default Resolve
