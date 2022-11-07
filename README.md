@@ -1,4 +1,6 @@
 # Launching Jupyter Labs in an easy way
+For a much more simplified version of this repo, see [jupyter-notebook-best-practice](https://github.com/da-tubi/jupyter-notebook-best-practice).
+
 ## Usage
 ``` shell
 # Default Resolve
