@@ -1,4 +1,7 @@
 jupyter_lab(name="default")
+
 jupyter_lab(name="duckdb", requirements=["duckdb==0.5.1"])
 
 jupyter_lab(name="data", requirements=["pandas==1.5.1", "pyspark==3.3.0"])
+
+jupyter_lab(name="http", requirements=["requests"])
