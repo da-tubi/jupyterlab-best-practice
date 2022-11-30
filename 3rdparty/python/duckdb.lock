@@ -11,6 +11,7 @@
 //   "generated_with_requirements": [
 //     "duckdb==0.5.1",
 //     "jupyterlab==3.4.8",
+//     "pandas==1.5.1",
 //     "setuptools"
 //   ],
 //   "manylinux": "manylinux2014",
@@ -1660,6 +1661,52 @@
           "artifacts": [
             {
               "algorithm": "sha256",
+              "hash": "683779e5728ac9138406c59a11e09cd98c7d2c12f0a5fc2b9c5eecdbb4a00075",
+              "url": "https://files.pythonhosted.org/packages/37/b4/f9d5339c96449af3321a923e239cc00e08e69f0ca1c1544654028da950e4/pandas-1.5.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+            },
+            {
+              "algorithm": "sha256",
+              "hash": "17da7035d9e6f9ea9cdc3a513161f8739b8f8489d31dc932bc5a29a27243f93d",
+              "url": "https://files.pythonhosted.org/packages/1c/75/49a1118aee0b5e95c2c52f57f48a340ab9cb0b7b30a3c986e20cdc41f4d2/pandas-1.5.1-cp38-cp38-macosx_11_0_arm64.whl"
+            },
+            {
+              "algorithm": "sha256",
+              "hash": "cb2a9cf1150302d69bb99861c5cddc9c25aceacb0a4ef5299785d0f5389a3209",
+              "url": "https://files.pythonhosted.org/packages/2a/aa/a08e03b2af7a669aefc3dd5fe6d6eac79d854cd985670c8f367bfc0cd976/pandas-1.5.1-cp38-cp38-macosx_10_9_universal2.whl"
+            },
+            {
+              "algorithm": "sha256",
+              "hash": "81f0674fa50b38b6793cd84fae5d67f58f74c2d974d2cb4e476d26eee33343d0",
+              "url": "https://files.pythonhosted.org/packages/93/0b/e012ba87937e72d5a7410bbe2b87202f95135ed2b51600a6f9693c582acb/pandas-1.5.1-cp38-cp38-macosx_10_9_x86_64.whl"
+            },
+            {
+              "algorithm": "sha256",
+              "hash": "669c8605dba6c798c1863157aefde959c1796671ffb342b80fcb80a4c0bc4c26",
+              "url": "https://files.pythonhosted.org/packages/a9/28/bb976b8173a957e5ff2ab9e61373f47e2fa7e31a864ca63f2c5d6894f2f2/pandas-1.5.1-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
+            },
+            {
+              "algorithm": "sha256",
+              "hash": "249cec5f2a5b22096440bd85c33106b6102e0672204abd2d5c014106459804ee",
+              "url": "https://files.pythonhosted.org/packages/d7/4e/bc3163c2f0b2f0728c398cad15e082efaa27e40fa579a0523e98caf10fdf/pandas-1.5.1.tar.gz"
+            }
+          ],
+          "project_name": "pandas",
+          "requires_dists": [
+            "hypothesis>=5.5.3; extra == \"test\"",
+            "numpy>=1.20.3; python_version < \"3.10\"",
+            "numpy>=1.21.0; python_version >= \"3.10\"",
+            "pytest-xdist>=1.31; extra == \"test\"",
+            "pytest>=6.0; extra == \"test\"",
+            "python-dateutil>=2.8.1",
+            "pytz>=2020.1"
+          ],
+          "requires_python": ">=3.8",
+          "version": "1.5.1"
+        },
+        {
+          "artifacts": [
+            {
+              "algorithm": "sha256",
               "hash": "33aae3f25fd1a026079f5d27bdd52496f0e0803b3469282162bafdcbdf6ef14f",
               "url": "https://files.pythonhosted.org/packages/5e/a8/878258cffd53202a6cc1903c226cf09e58ae3df6b09f8ddfa98033286637/pandocfilters-1.5.0-py2.py3-none-any.whl"
             },
@@ -2602,6 +2649,7 @@
   "requirements": [
     "duckdb==0.5.1",
     "jupyterlab==3.4.8",
+    "pandas==1.5.1",
     "setuptools"
   ],
   "requires_python": [

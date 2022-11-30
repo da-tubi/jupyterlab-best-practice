@@ -20,7 +20,6 @@ enable_resolves = true
 
 
 [python.resolves]
-  data = "3rdparty/python/data.lock"
   duckdb = "3rdparty/python/duckdb.lock"
   http = "3rdparty/python/http.lock"
   default = "3rdparty/python/default.lock"
