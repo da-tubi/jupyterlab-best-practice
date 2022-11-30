@@ -4,4 +4,4 @@ __pycache__
 dist/
 .idea/
 .ipynb_checkpoints
-
+.python-version
