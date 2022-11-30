@@ -1,0 +1,2 @@
+jupyterlab==3.4.8
+requests
