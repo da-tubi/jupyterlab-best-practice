@@ -7,7 +7,7 @@ For a much more simplified version of this repo, see [jupyter-notebook-best-prac
 bin/lab
 
 bin/lab duckdb
-bin/lab data
+bin/lab http
 ```
 ## How to define a Jupyter Lab
 ### Three Highlights
