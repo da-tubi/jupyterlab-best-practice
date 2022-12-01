@@ -15,7 +15,7 @@ root_patterns = ["/"]
 
 
 [python]
-interpreter_constraints = ["==3.8.*"]
+interpreter_constraints = [">=3.8.*"]
 enable_resolves = true
 
 
@@ -23,3 +23,4 @@ enable_resolves = true
   duckdb = "3rdparty/python/duckdb.lock"
   http = "3rdparty/python/http.lock"
   default = "3rdparty/python/default.lock"
+
